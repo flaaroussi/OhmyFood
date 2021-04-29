@@ -1,0 +1,26 @@
+/**Section :Geolocalisation*/
+.acceuil-geolocalisation{
+   background-color: $color-bg-secondaire;
+   @include flex (row, center, 0);
+  
+
+   &__preview{
+      @include flex (row, 0, center);
+      height: 45px;
+      & i{
+         margin-right: 1em;
+      }
+   }
+}
+
+/**Section :Reservation*/
+
+.acceuil-reservation{
+   background-color:$color-bg-primaire;
+   @include flex (column, center, center);
+
+   &__sous-titre{
+      margin-top: nth($padding-margin,3);   
+   }
+}
+

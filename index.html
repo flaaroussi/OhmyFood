@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./public/css/main.css">
-   <title>Document</title>
+   <!--Liens icones -->
+   <script src="https://kit.fontawesome.com/413ec6d2d3.js" crossorigin="anonymous"></script>
+   <link
+      href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'
+      rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="./public/css/main.css" />
+   <title>ohmyfood</title>
 </head>
+
 <body>
-   
+
+   <header class="header">
+      <div class="header__logo">
+         <img src="./public/images/logo/ohmyfood.png" alt="Logo ohmyfood">
+      </div>
+
+   </header>
+
+   <main class="container">
+      <!--Géolocalisation-->
+      <section class="acceuil-geolocalisation">
+            <div class="acceuil-geolocalisation__preview">
+               <i class="fas fa-map-marker-alt"></i>
+               <span>Paris, Belleville</span>
+            </div>
+      </section>
+
+      <!--Réservation-->
+      <section class="acceuil-reservation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <div class="acceuil-reservation__sous-titre">Découvrez des restaurants d'exception, selectionnés par nos
+               soins</div>
+            <button class="btn-reservation">Expolrer nos restaurants</button>
+      </section>
+
+
+
+      <!--Fonctionnement-->
+      <section class="acceuil-fonctionnement">
+               <h1>Fonctionnement</h1>
+            <div>
+               <div><i class="fas fa-mobile-alt"></i><span>Choisissez un restaurant</span></div>
+               <div><i class="fas fa-list-ul"></i><span>votre menu</span> </div>
+               <div>Déguster au restaurant</div>
+            </div>
+      </section>
+
+   </main>
+
+   <footer>
+      <div>
+         contact
+      </div>
+   </footer>
+
 </body>
+
 </html>

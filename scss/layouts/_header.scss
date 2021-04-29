@@ -1,0 +1,9 @@
+.header{
+   display: flex;
+   justify-content: center;
+   
+
+   &__logo{
+      padding:nth($padding-margin,3);
+   }
+}
