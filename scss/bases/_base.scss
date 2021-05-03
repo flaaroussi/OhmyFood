@@ -7,17 +7,36 @@
 body{
    
    font-family: 'Roboto', Courier, monospace;
-   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: $font-size-default;
+  
 }
 
 img{
    object-fit: cover;
+   
+   
 }
 
 h1{
-   margin-top: 40px;
-   display: flex;
-   justify-content: center;
+   font-size: $font-size-title;
+   margin-bottom:nth($padding-margin,2);
+}
+h2{
+   font-size: #{$font-size-title - 0.2};
+   margin-bottom:nth($padding-margin,1);
 }
 
+i.fas,
+i.far{
 
+   color:lighten($color-icone, 50%);
+
+}
+/**Style coeur*/
+i.far{
+   font-size: 1.6rem;
+   
+}

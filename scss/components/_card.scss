@@ -1,0 +1,54 @@
+.bloc-card{
+   position:relative;
+   background-color: $color-white;
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+   margin-bottom: nth($padding-margin,3);
+   &__header{     
+         img{
+         height: 180px;
+         width: 100%;
+         border-top-left-radius: 20px;
+         border-top-right-radius:20px;  
+      }
+   }
+   &__text{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding:nth($padding-margin,3);
+      padding-left: nth($padding-margin,2);
+      i{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}
+
+
+      /**Positionnement :text-coeur*/
+
+
+.message{
+   background-color: $color-tertiaire;
+   color:green;
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin-top:20px;
+   margin-right:15px ;
+   padding:nth($padding-margin,1);
+   border-radius: 3px;
+   font-weight: bold;
+} 
+
+.far{
+   &:hover{
+      background-color:$color-secondaire;
+   }
+}
+
+
+

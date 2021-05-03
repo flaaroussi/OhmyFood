@@ -6,6 +6,5 @@
    height: 45px;
    border-radius: 50px;
    min-width: 200px;
-   margin-top: 20px;
-   margin-bottom: 40px;
+   margin-top: nth($padding-margin,5);
 }

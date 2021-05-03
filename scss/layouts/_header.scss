@@ -4,6 +4,7 @@
    
 
    &__logo{
-      padding:nth($padding-margin,3);
+      padding-top:nth($padding-margin,3);
+      padding-bottom:nth($padding-margin,1);
    }
 }

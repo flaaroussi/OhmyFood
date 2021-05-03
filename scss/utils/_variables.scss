@@ -1,17 +1,22 @@
-$header-bg:red;
-$header-bg2:green;
+
+
+$font-size-title:1.7rem;
+$font-size-default:1.1rem;
 
 /**Couleurs*/
 
 $color-primaire:#9356dc;
 $color-secondaire:#FF79DA;
 $color-tertiaire:#99E2D0;
+$color-tertiaire-sombre:#3e7869;
 $color-bg-primaire:#f2f2f2;
 $color-bg-secondaire:#c2c2c2;
-$color-white:#fff;
+$color-white:#ffffff;
+$color-icone:#000000;
+
 
 /**Padding et marging a utilisé dans le site*/
-$padding-margin: 0.5em 1em 1.5em 2em 2.5em 3em ;
+$padding-margin: 0.5em 1em 1.5em 2em 2.5em 3em 4em 0.3 ;
 
 
 /**Flex*/

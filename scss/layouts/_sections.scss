@@ -1,10 +1,15 @@
+
+.container{
+   background-color:$color-bg-primaire;
+   padding: nth($padding-margin,3);
+}
+
 /**Section :Geolocalisation*/
+
 .acceuil-geolocalisation{
    background-color: $color-bg-secondaire;
    @include flex (row, center, 0);
-  
-
-   &__preview{
+     &__preview{
       @include flex (row, 0, center);
       height: 45px;
       & i{
@@ -13,14 +18,36 @@
    }
 }
 
+/**Section :Fonctionnement*/
+.acceuil-fonctionnement{
+   padding: nth($padding-margin,4);
+   padding-right: nth($padding-margin,3);
+}
+
 /**Section :Reservation*/
 
 .acceuil-reservation{
+   padding: nth($padding-margin,4);
+   padding-top: nth($padding-margin,5);
+   padding-bottom: nth($padding-margin,5);
+   text-align: center;
    background-color:$color-bg-primaire;
    @include flex (column, center, center);
 
-   &__sous-titre{
-      margin-top: nth($padding-margin,3);   
+   
+}
+
+/**Section :Restaurants*/
+
+
+.container-bloc{
+   margin-top: nth($padding-margin,4);
+   padding-bottom: nth($padding-margin,4);
+   h1{
+      padding-top:nth($padding-margin,3) ;
    }
 }
+
+  
+   
 

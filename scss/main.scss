@@ -1,14 +1,17 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-
+@import "./utils/utils";
 /** Chargement style global*/
 @import "./bases/base";
 
 /** Chargement style Components*/
-@import "./components/bottons";
-
+@import "./components/botton";
+@import "./components/liste";
+@import "./components/badge";
+@import "./components/card";
 /** Chargement style layouts*/
 @import "./layouts/header";
 
 @import "./layouts/sections";
+@import "./layouts/footer";

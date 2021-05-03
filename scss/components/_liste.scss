@@ -1,0 +1,30 @@
+.bloc-list{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+      
+   li {
+      position: relative;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      background-color: $color-bg-primaire;
+      padding-right:nth($padding-margin,6) ;
+      border-radius: 20px;
+      list-style-type: none;
+      width: 100%;
+      margin-bottom:nth($padding-margin,3);
+    
+      i{
+         margin-right:nth($padding-margin,2) ;
+         margin-left:nth($padding-margin,4)
+      }
+   }
+   
+   .badge{
+      position: absolute;
+      left: -15px;
+      
+   }
+}
