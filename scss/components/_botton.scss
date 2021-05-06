@@ -1,13 +1,21 @@
 
 
-.btn-reservation{
+.container-btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:nth($padding-margin,4)
+}
+
+.btn{
    background: linear-gradient(180deg,$color-secondaire,$color-primaire);
    box-shadow: 1px 2px 10px 1px rgb(192, 192, 192);
    color:$color-white;
    font-size:$font-size-title ;
    border-radius: 50px;
-   width: 80%;
-   margin-top: nth($padding-margin,5);
-   padding: nth($padding-margin,2);
+   padding: 0.6em;
+   padding-right: nth($padding-margin,3);
+   padding-left: nth($padding-margin,3);
    border: none;
+     
 }

@@ -1,8 +1,7 @@
 
 
 .footer{
-   border:1px solid red;
-   background-color: black;
+   background-color: $color-bg-footer;
    color:$color-white;
    padding: nth($padding-margin,3);
   
