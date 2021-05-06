@@ -5,6 +5,7 @@
    flex-direction: column;
    border-radius: 20px;
    margin-bottom: nth($padding-margin,3);
+
    &__header{     
          img{
          height: 180px;
@@ -13,17 +14,14 @@
          border-top-right-radius:20px;  
       }
    }
+
    &__text{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding:nth($padding-margin,3);
-      padding-left: nth($padding-margin,2);
-      i{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-      }
+      padding-left: nth($padding-margin,2);    
+         
    }
 }
 
@@ -44,11 +42,68 @@
    font-weight: bold;
 } 
 
-.far{
-   &:hover{
-      background-color:$color-secondaire;
+/**image menu delice page 2*/
+
+.plat-image{
+   width: 100%;
+   height:335px;
+   
+}
+.container-menu{
+   background-color: $color-bg-primaire;
+   padding:nth($padding-margin,2);
+   border-top-right-radius: 40px;
+   border-top-left-radius: 40px;
+   position: relative;                
+   width: 100%;                       
+   top:-40px;
+
+      &__text{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right:nth($padding-margin,3) ;
    }
 }
+
+.cout-style{
+   font-weight: bold;
+}
+.nom-menu{
+   font-family: 'Shrikhand';
+}
+.titre-font{
+   font-family: 'Shrikhand';
+}
+
+.menus{
+  
+   &__titre{
+      margin-bottom: 6px;
+      margin-top:nth($padding-margin,5);
+      
+   }
+   &__separateur{
+      border-bottom:3px solid $color-tertiaire;
+      margin-bottom: nth($padding-margin,2);
+      width: 45px;
+   }
+   &__plat{
+      padding:nth($padding-margin,2);
+      margin-bottom: nth($padding-margin,2);
+      background-color: $color-white;
+      border-radius: 20px;
+      box-shadow: 1px 2px 10px 1px rgb(192, 192, 192);
+      &__cout{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+      }
+   }
+}
+
+  
+
 
 
 

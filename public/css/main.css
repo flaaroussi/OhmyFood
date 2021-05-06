@@ -6,32 +6,52 @@
   font-weight: bold;
 }
 
+/**Liens cliquables  coeur*/
+/**cacher le coeur rose*/
+.coeur {
+  cursor: pointer;
+}
+.coeur__rempli {
+  display: none;
+}
+.coeur:hover .coeur__rempli {
+  display: block;
+  color: #9356dc;
+}
+.coeur:hover .coeur__cadre {
+  display: none;
+}
+
+.degrader {
+  height: 100px;
+  border: 1px solid red;
+  background: linear-gradient(to left top, blue, red);
+}
+
+.degrader2 {
+  height: 100px;
+  border: 1px solid red;
+}
+
 /** Chargement style global*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: 'Roboto', Courier, monospace;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Roboto", Courier, monospace;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   font-size: 1.1rem;
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -50,73 +70,61 @@ i.far {
 }
 
 /**Style coeur*/
-i.far {
+i.far,
+i.fa-heart {
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /** Chargement style Components*/
 .btn-reservation {
-  background-color: #FF79DA;
+  background: linear-gradient(180deg, #FF79DA, #9356dc);
+  box-shadow: 1px 2px 10px 1px silver;
   color: #ffffff;
-  height: 45px;
+  font-size: 1.7rem;
   border-radius: 50px;
-  min-width: 200px;
+  width: 80%;
   margin-top: 2.5em;
+  padding: 1em;
+  border: none;
 }
 
 .bloc-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .bloc-list li {
   position: relative;
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #f2f2f2;
+  box-shadow: 0px 3px 5px 2px gainsboro;
   padding-right: 3em;
   border-radius: 20px;
   list-style-type: none;
   width: 100%;
   margin-bottom: 1.5em;
 }
-
 .bloc-list li i {
   margin-right: 1em;
   margin-left: 2em;
 }
-
 .bloc-list .badge {
   position: absolute;
   left: -15px;
 }
 
+/**Liste page menu*/
 .badge {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 30px;
   width: 30px;
   background-color: #9356dc;
@@ -127,49 +135,23 @@ i.far {
 .bloc-card {
   position: relative;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border-radius: 20px;
   margin-bottom: 1.5em;
 }
-
 .bloc-card__header img {
   height: 180px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
 .bloc-card__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 1.5em;
   padding-left: 1em;
-}
-
-.bloc-card__text i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /**Positionnement :text-coeur*/
@@ -186,23 +168,77 @@ i.far {
   font-weight: bold;
 }
 
-.far:hover {
-  background-color: #FF79DA;
+/**image menu delice page 2*/
+.plat-image {
+  width: 100%;
+  height: 335px;
+}
+
+.container-menu {
+  background-color: #f2f2f2;
+  padding: 1em;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  position: relative;
+  width: 100%;
+  top: -40px;
+}
+.container-menu__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 1.5em;
+}
+
+.cout-style {
+  font-weight: bold;
+}
+
+.nom-menu {
+  font-family: "Shrikhand";
+}
+
+.titre-font {
+  font-family: "Shrikhand";
+}
+
+.menus__titre {
+  margin-bottom: 6px;
+  margin-top: 2.5em;
+}
+.menus__separateur {
+  border-bottom: 3px solid #99E2D0;
+  margin-bottom: 1em;
+  width: 45px;
+}
+.menus__plat {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px 1px silver;
+}
+.menus__plat__cout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /** Chargement style layouts*/
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 .header__logo {
   padding-top: 1.5em;
   padding-bottom: 0.5em;
+}
+
+/**Header page des menus*/
+.header__logo {
+  margin-left: 2em;
 }
 
 .container {
@@ -213,36 +249,20 @@ i.far {
 /**Section :Geolocalisation*/
 .acceuil-geolocalisation {
   background-color: #c2c2c2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /** Si on a n'a pas besoin de flex direction cet attribut ne dois pas etre affiché*/
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   /** si le pramettre  $justify-content égale à 0 >> on utilise pas l'attribut justify-content */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .acceuil-geolocalisation__preview {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /** Si on a n'a pas besoin de flex direction cet attribut ne dois pas etre affiché*/
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   /** si le pramettre  $justify-content égale à 0 >> on utilise pas l'attribut justify-content */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 45px;
 }
-
 .acceuil-geolocalisation__preview i {
   margin-right: 1em;
 }
@@ -260,21 +280,12 @@ i.far {
   padding-bottom: 2.5em;
   text-align: center;
   background-color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /** Si on a n'a pas besoin de flex direction cet attribut ne dois pas etre affiché*/
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /** si le pramettre  $justify-content égale à 0 >> on utilise pas l'attribut justify-content */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /**Section :Restaurants*/
@@ -282,39 +293,37 @@ i.far {
   margin-top: 2em;
   padding-bottom: 2em;
 }
-
 .container-bloc h1 {
   padding-top: 1.5em;
 }
 
+/*********************************************************************/
+/**Page menu*/
 .footer {
+  border: 1px solid red;
   background-color: black;
   color: #ffffff;
   padding: 1.5em;
 }
-
 .footer__titre {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   margin-bottom: 1em;
   font-size: 1.8rem;
 }
-
 .footer i {
   margin-right: 1em;
   color: #ffffff;
 }
-
 .footer i.fa-hands-helping {
   font-size: 13px;
 }
-
 .footer li {
   list-style-type: none;
   margin-bottom: 1em;
 }
-
 .footer li a {
   text-decoration: none;
   color: #ffffff;
 }
+
 /*# sourceMappingURL=main.css.map */

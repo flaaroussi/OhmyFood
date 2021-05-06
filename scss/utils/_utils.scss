@@ -1,3 +1,38 @@
 .text-bold{
    font-weight: bold;
 }
+
+/**Liens cliquables  coeur*/
+/**cacher le coeur rose*/
+
+.coeur{
+   cursor: pointer;
+   &__rempli{                                           
+      display: none ;
+   }
+
+   &:hover {
+      .coeur__rempli{
+         display:block ;
+         color: $color-primaire;
+      }
+      .coeur__cadre{
+      display:none ;
+      }
+   }
+}
+
+
+
+
+.degrader{
+   height: 100px;
+   border: 1px solid red;
+   background: linear-gradient(to left top, blue, red);
+}
+
+.degrader2{
+   height: 100px;
+   border: 1px solid red;
+   
+}

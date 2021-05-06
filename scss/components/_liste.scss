@@ -10,6 +10,7 @@
       display: flex;
       align-items: center;
       background-color: $color-bg-primaire;
+      box-shadow:0px 3px 5px 2px rgb(220, 220, 220);
       padding-right:nth($padding-margin,6) ;
       border-radius: 20px;
       list-style-type: none;
@@ -28,3 +29,5 @@
       
    }
 }
+
+/**Liste page menu*/

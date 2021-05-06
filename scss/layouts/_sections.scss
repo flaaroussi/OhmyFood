@@ -34,7 +34,6 @@
    background-color:$color-bg-primaire;
    @include flex (column, center, center);
 
-   
 }
 
 /**Section :Restaurants*/
@@ -47,7 +46,9 @@
       padding-top:nth($padding-margin,3) ;
    }
 }
+/*********************************************************************/
 
-  
+/**Page menu*/
+
    
 

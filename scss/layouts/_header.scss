@@ -1,10 +1,19 @@
 .header{
    display: flex;
-   justify-content: center;
-   
-
+   justify-content: center;  
+   flex-direction: row;
+   align-items: center;
    &__logo{
       padding-top:nth($padding-margin,3);
       padding-bottom:nth($padding-margin,1);
    }
 }
+
+
+
+
+/**Header page des menus*/
+
+.header__logo {
+   margin-left: nth($padding-margin,4);
+   }
