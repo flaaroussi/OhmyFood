@@ -1,7 +1,7 @@
 
 
-$font-size-title:1.7rem;
-$font-size-default:1.1rem;
+$font-size-title:1.2rem;
+$font-size-default:0.8rem;
 
 /**Couleurs*/
 
@@ -14,10 +14,17 @@ $color-bg-secondaire:#c2c2c2;
 $color-white:#ffffff;
 $color-icone:#000000;
 $color-bg-footer:#2E2E2E;
+$color-bg-geolocalisatin:#DAE0E0;
+$color-bg-geolocalisatin-border:#B1BABA;
 
 
 /**Padding et marging a utilisé dans le site*/
 $padding-margin: 0.5em 1em 1.5em 2em 2.5em 3em 4em 0.6em ;
 
 
-/**Flex*/
+/**laoder*/
+$cd-bars: #15DEA5;
+$size: 3vh;
+$anim-dur: 1000ms;
+$num-bars: 5;
+$anim-delay: $anim-dur / $num-bars;

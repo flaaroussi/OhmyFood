@@ -7,7 +7,10 @@
 /**Section :Geolocalisation*/
 
 .acceuil-geolocalisation{
-   background-color: $color-bg-secondaire;
+   background-color:lighten($color-icone, 90%);
+   
+   border-top: 2px solid lighten($color-icone, 80%);
+
    @include flex (row, center, 0);
      &__preview{
       @include flex (row, 0, center);
@@ -39,15 +42,14 @@
 
 }
 
+
 /**Section :Restaurants*/
 
 
 .container-bloc{
    margin-top: nth($padding-margin,4);
    padding-bottom: nth($padding-margin,4);
-   h1{
-      padding-top:nth($padding-margin,3) ;
-   }
+  
 }
 /*********************************************************************/
 

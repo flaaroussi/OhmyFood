@@ -43,6 +43,16 @@ i.fa-heart{
    font-size: 1.6rem;
    
 }
+i.fa-arrow-left{
+   color:black ;
+   position: absolute;
+   left: 6%;
+   &:hover{
+      color: $color-primaire;
+   }
+}
 a{
    text-decoration: none;
+   color:black;
 }
+
