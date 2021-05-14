@@ -99,10 +99,6 @@ a {
   background: #FFFFFF;
   height: 100vh;
   width: 100%;
-  /*
-  position: fixed;
-  top: 0;
-  left: 0;*/
   z-index: 100;
   animation-name: loading;
   animation-duration: 1s;
@@ -131,7 +127,6 @@ a {
   }
 }
 .loading__container {
-  border: 1px solid red;
   height: 180px;
   width: 200px;
   display: flex;
@@ -149,13 +144,11 @@ a {
   color: #9356dc;
 }
 .loading .spinner {
-  border: 8px solid #9356dc;
   height: 7em;
   width: 7em;
   border-radius: 50%;
-  border-left: 8px solid #e4d5f6;
-  border-top: 8px solid #e4d5f6;
-  transform: translateZ(0);
+  border: 8px solid #e4d5f6;
+  border-top: 8px solid #9356dc;
   animation: spinner 1.1s infinite linear;
 }
 @keyframes spinner {

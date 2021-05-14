@@ -2,11 +2,7 @@
     /**Animation:appraition 1ere page*/
     background:#FFFFFF;
     height: 100vh;
-    width: 100%;
-    /*
-    position: fixed;
-    top: 0;
-    left: 0;*/
+    width: 100%;   
     z-index: 100;
     animation-name:loading;
     animation-duration:1s; 
@@ -35,7 +31,6 @@
     }
        /**Conception spinner*/
     &__container{
-        border: 1px solid red;
         height: 180px;
         width: 200px;
         display: flex;
@@ -54,17 +49,13 @@
         color: $color-primaire;
         
     }
-    .spinner{
-        border:8px solid $color-primaire;
+    .spinner{        
         height: 7em;
         width: 7em;
         border-radius: 50%;
-        border-left: 8px solid lighten($color-primaire,30%);
-        border-top: 8px solid lighten($color-primaire,30%);
-        
-        transform: translateZ(0);
+        border:8px solid lighten($color-primaire,30%);  
+        border-top: 8px solid $color-primaire;             
         animation: spinner 1.1s infinite linear;
-
         @keyframes spinner {
             0%{
                 transform:rotate(0deg);
