@@ -8,13 +8,11 @@
 }
  
 body{
-   
    font-family: 'Roboto', Courier, monospace;
    display: flex;
    flex-direction: column;
    justify-content: center;
    font-size: $font-size-default;
-  
 }
 
 img{
@@ -27,6 +25,7 @@ h1{
    font-size: $font-size-title;
    margin-bottom:nth($padding-margin,2);
 }
+
 h2{
    font-size: #{$font-size-title - 0.2};
    margin-bottom:nth($padding-margin,1);
@@ -35,6 +34,7 @@ h2{
 i.fas,
 i.far{
    color:lighten($color-icone, 50%);
+   font-size: 18PX;
 
 }
 /**Style coeur*/
@@ -44,6 +44,7 @@ i.fa-heart{
    
 }
 i.fa-arrow-left{
+   font-size: 1.3rem;
    color:black ;
    position: absolute;
    left: 6%;

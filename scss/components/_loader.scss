@@ -1,85 +1,78 @@
-@keyframes loading-bg {
-    0% {
-        opacity: 1;
-    }
-
-    99% {
-        opacity: 0;
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(0);
-        opacity: 0;
-        height: 0;
-    }
-}
-
-
-@keyframes flash {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
-}
-
-
-
-
 .loading{
-    background-color: white;
-    width: 100%;
-    opacity: 1;
-    z-index: 100; 
+    /**Animation:appraition 1ere page*/
+    background:#FFFFFF;
     height: 100vh;
-    animation: loading-bg 1s ease-in-out 3s 1 normal forwards;
-
-    &__content{
-        position: absolute;
-        top: calc(40% - 80px);
-        left:calc(50% - 100px);
-        width:200px;
-        height: 160px;
-        z-index: 100;
+    width: 100%;
+    /*
+    position: fixed;
+    top: 0;
+    left: 0;*/
+    z-index: 100;
+    animation-name:loading;
+    animation-duration:1s; 
+    animation-timing-function:ease-in-out; 
+    animation-delay :3s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode:forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    @keyframes loading {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity:0.5;
+        }
+        100%{
+            opacity:0;
+            transform:scale(0);
+            height: 0;
+            
+        }
+    }
+       /**Conception spinner*/
+    &__container{
+        border: 1px solid red;
+        height: 180px;
+        width: 200px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content:space-between;
-        &__letter{  
-            .letter{                
-                font-size: 1.5rem;
-                font-family: "Shrikhand", "Sans serif";
-                animation: flash 1s linear infinite;
-                text-shadow: 0 0 .1rem $color-secondaire;   
-                
-                @for $var from 1 to 9 {
-                    &:nth-child(#{$var}){
-                        animation-delay: $var / 10 + s; 
-                        color: $color-secondaire;
-                    }
-                }
-            }
-        }
+        justify-content: space-between;
+    }
+     /**Anmation ohmyfood*/
+     .letter{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        color: $color-primaire;
+        
+    }
+    .spinner{
+        border:8px solid $color-primaire;
+        height: 7em;
+        width: 7em;
+        border-radius: 50%;
+        border-left: 8px solid lighten($color-primaire,30%);
+        border-top: 8px solid lighten($color-primaire,30%);
+        
+        transform: translateZ(0);
+        animation: spinner 1.1s infinite linear;
 
-        &__spinner{
-            width: 120px;
-            height: 120px;           
-            border-radius: 50%;
-            border: 8px solid rgba($color: #9356dc, $alpha: 0.2);
-            animation: spin 1s linear infinite;        
+        @keyframes spinner {
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+               
+            }
         }
     }
 }

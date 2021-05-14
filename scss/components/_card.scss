@@ -5,6 +5,7 @@
    flex-direction: column;
    border-radius: 20px;
    margin-bottom: nth($padding-margin,3);
+   box-shadow:0px 3px 5px 2px rgb(220, 220, 220);
 
    &__header{     
          img{
@@ -56,6 +57,7 @@
    padding-bottom:nth($padding-margin,2);
    border-top-right-radius: 40px;
    border-top-left-radius: 40px;
+   
    position: relative;                
    width: 100%;                       
    top:-60px;
@@ -82,8 +84,10 @@
   
    &__titre{
       margin-bottom: 6px;
-      margin-top:nth($padding-margin,1);
-      
+      margin-top:nth($padding-margin,5);
+      &:first-child{
+         margin-top: 0;
+      }
    }
    &__separateur{
       border-bottom:3px solid $color-tertiaire;

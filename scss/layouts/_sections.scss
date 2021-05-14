@@ -9,6 +9,8 @@
 .acceuil-geolocalisation{
    background-color:lighten($color-icone, 90%);
    
+   /*box-shadow: inset 0px 4px 4px -2px #9b9b9b;*/
+   
    border-top: 2px solid lighten($color-icone, 80%);
 
    @include flex (row, center, 0);
