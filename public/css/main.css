@@ -92,6 +92,108 @@ a {
 }
 
 /** Chargement style Components*/
+@keyframes loading-bg {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  background-color: white;
+  width: 100%;
+  opacity: 1;
+  z-index: 100;
+  height: 100vh;
+  animation: loading-bg 1s ease-in-out 3s 1 normal forwards;
+}
+.loading__content {
+  position: absolute;
+  top: calc(40% - 80px);
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 160px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.loading__content__letter .letter {
+  font-size: 1.5rem;
+  font-family: "Shrikhand", "Sans serif";
+  animation: flash 1s linear infinite;
+  text-shadow: 0 0 0.1rem #FF79DA;
+}
+.loading__content__letter .letter:nth-child(1) {
+  animation-delay: 0.1s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(2) {
+  animation-delay: 0.2s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(3) {
+  animation-delay: 0.3s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(4) {
+  animation-delay: 0.4s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(5) {
+  animation-delay: 0.5s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(6) {
+  animation-delay: 0.6s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(7) {
+  animation-delay: 0.7s;
+  color: #FF79DA;
+}
+.loading__content__letter .letter:nth-child(8) {
+  animation-delay: 0.8s;
+  color: #FF79DA;
+}
+.loading__content__spinner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid rgba(147, 86, 220, 0.2);
+  animation: spin 1s linear infinite;
+}
+
 .container-btn {
   display: flex;
   justify-content: center;
