@@ -16,14 +16,14 @@
    <div class="loading">
       <div class="loading__container"> 
          <div class="letter">
-            <div>o</div>
-            <div>h</div>
-            <div>m</div>
-            <div>y</div>
-            <div>f</div>
-            <div>o</div>   
-            <div>o</div> 
-            <div>d</div> 
+            <div class="letter__loader letter__loader--1">o</div>
+            <div class="letter__loader letter__loader--2">h</div>
+            <div class="letter__loader letter__loader--3">m</div>
+            <div class="letter__loader letter__loader--4">y</div>
+            <div class="letter__loader letter__loader--5">f</div>
+            <div class="letter__loader letter__loader--6">o</div>   
+            <div class="letter__loader letter__loader--7">o</div> 
+            <div class="letter__loader letter__loader--8">d</div> 
          </div>         
           <div class="spinner"></div>
       </div>
@@ -37,10 +37,11 @@
    </header>
    <!--Géolocalisation-->
    <section class="acceuil-geolocalisation">
-      <div class="acceuil-geolocalisation__preview">
+      <form class="acceuil-geolocalisation__preview">
          <i class="fas fa-map-marker-alt"></i>
-         <span>Paris, Belleville</span>
-      </div>
+         <input  type="text" name="localisation" value="Paris, Belleville" />
+         
+      </form>
    </section>
 
    <!--Section 1 Réservation-->
@@ -82,98 +83,99 @@
       <section class="container-bloc">
          <h1>Restaurants</h1>
          <!--Carte la palette du goût-->
+         <div class="container-restaurant">
+            <a href="./menus/menu_gout.html" class="bloc-card">
+               <div class="bloc-card__header">
+                  <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
+                  <div class="message">Nouveau</div>
+               </div>
+               <div class="bloc-card__text">
+                  <div>
+                     <h2>La palette du goût</h2>
+                     <p class="text2">Ménilmontant</p>
+                  </div>
 
-         <a href="./menus/menu_gout.html" class="bloc-card">
-            <div class="bloc-card__header">
-               <img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
-               <div class="message">Nouveau</div>
-            </div>
-            <div class="bloc-card__text">
-               <div>
-                  <h2>La palette du goût</h2>
-                  <p class="text2">Ménilmontant</p>
+                  <div class="coeur" href="#">
+                     <!--Coeur cadre-->
+                     <i class="far fa-heart coeur__cadre"></i>
+                     <!--Coeur background-->
+                     <i class="fas fa-heart coeur__rempli"></i>
+                  </div>  
+
                </div>
 
-               <div class="coeur" href="#">
-                  <!--Coeur cadre-->
-                  <i class="far fa-heart coeur__cadre"></i>
-                  <!--Coeur background-->
-                  <i class="fas fa-heart coeur__rempli"></i>
-               </div>  
+            </a>
+         
+            <!--Carte la note enchantée-->
 
-            </div>
-
-         </a>
-
-         <!--Carte la note enchantée-->
-
-         <a href="./menus/menu_enchante.html" class="bloc-card">
-            <div class="bloc-card__header">
-               <img src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-               <div class="message">Nouveau</div>
-            </div>
-            <div class="bloc-card__text">
-               <div>
-                  <h2>La note enchantée</h2>
-                  <p class="text2">Charonne</p>
+            <a href="./menus/menu_enchante.html" class="bloc-card">
+               <div class="bloc-card__header">
+                  <img src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                  <div class="message">Nouveau</div>
                </div>
-               <div class="coeur" href="#">
-                  <!--Coeur cadre-->
-                  <i class="far fa-heart coeur__cadre"></i>
-                  <!--Coeur background-->
-                  <i class="fas fa-heart coeur__rempli"></i>
-               </div>  
+               <div class="bloc-card__text">
+                  <div>
+                     <h2>La note enchantée</h2>
+                     <p class="text2">Charonne</p>
+                  </div>
+                  <div class="coeur" href="#">
+                     <!--Coeur cadre-->
+                     <i class="far fa-heart coeur__cadre"></i>
+                     <!--Coeur background-->
+                     <i class="fas fa-heart coeur__rempli"></i>
+                  </div>  
 
-            </div>
-
-         </a>
-
-         <!--Carte À la française-->
-
-         <a href="./menus/menu_francaise.html" class="bloc-card">
-            <div class="bloc-card__header">
-               <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-            </div>
-            <div class="bloc-card__text">
-               <div>
-                  <h2>À la française</h2>
-                  <p class="text2">Cité Rouge</p>
-               </div>
-               <div class="coeur" href="#">
-                  <!--Coeur cadre-->
-                  <i class="far fa-heart coeur__cadre"></i>
-                  <!--Coeur background-->
-                  <i class="fas fa-heart coeur__rempli"></i>
-               </div>  
-
-            </div>
-
-         </a>
-
-
-         <!--Carte Le délice des sens-->
-
-         <a href="./menus/menu_delice.html" class="bloc-card">
-            <div class="bloc-card__header">
-               <img src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-            </div>
-            <div class="bloc-card__text">
-               <div>
-                  <h2>Le délice des sens</h2>
-                  <p class="text2">Folie-Méricourt</p>
                </div>
 
-               <div class="coeur" href="#">
-                  <!--Coeur cadre-->
-                  <i class="far fa-heart coeur__cadre"></i>
-                  <!--Coeur background-->
-                  <i class="fas fa-heart coeur__rempli"></i>
-               </div>  
+            </a>
 
-            </div>
+            <!--Carte À la française-->
 
-         </a>
+            <a href="./menus/menu_francaise.html" class="bloc-card">
+               <div class="bloc-card__header">
+                  <img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+               </div>
+               <div class="bloc-card__text">
+                  <div>
+                     <h2>À la française</h2>
+                     <p class="text2">Cité Rouge</p>
+                  </div>
+                  <div class="coeur" href="#">
+                     <!--Coeur cadre-->
+                     <i class="far fa-heart coeur__cadre"></i>
+                     <!--Coeur background-->
+                     <i class="fas fa-heart coeur__rempli"></i>
+                  </div>  
 
+               </div>
+
+            </a>
+
+
+            <!--Carte Le délice des sens-->
+
+            <a href="./menus/menu_delice.html" class="bloc-card">
+               <div class="bloc-card__header">
+                  <img src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+               </div>
+               <div class="bloc-card__text">
+                  <div>
+                     <h2>Le délice des sens</h2>
+                     <p class="text2">Folie-Méricourt</p>
+                  </div>
+
+                  <div class="coeur" href="#">
+                     <!--Coeur cadre-->
+                     <i class="far fa-heart coeur__cadre"></i>
+                     <!--Coeur background-->
+                     <i class="fas fa-heart coeur__rempli"></i>
+                  </div>  
+
+               </div>
+
+            </a>
+
+         </div>
       </section>
 
    </main>

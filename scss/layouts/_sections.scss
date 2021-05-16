@@ -7,20 +7,24 @@
 /**Section :Geolocalisation*/
 
 .acceuil-geolocalisation{
+   
    background-color:lighten($color-icone, 90%);
-   
-   /*box-shadow: inset 0px 4px 4px -2px #9b9b9b;*/
-   
-   border-top: 2px solid lighten($color-icone, 80%);
+   box-shadow: inset 0px 4px 4px -2px rgba(0,0,0,0.40);
 
    @include flex (row, center, 0);
      &__preview{
+      
       @include flex (row, 0, center);
       height: 45px;
-      & i{
+      i{
          margin-right: 1em;
       }
+      input{
+         background-color:transparent;
+         border:0px;
+      }
    }
+   
 }
 
 /**Section :Fonctionnement*/

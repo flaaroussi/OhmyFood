@@ -6,7 +6,7 @@
    padding: nth($padding-margin,3);
   
    &__titre{
-      font-family: 'Shrikhand';
+      font-family: $font-family-secondaire;
       margin-bottom:nth($padding-margin,2) ;
       font-size: #{$font-size-default + 0.7};
    }

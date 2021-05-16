@@ -3,6 +3,10 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   @include tablette{
+      flex-direction: row;
+      gap: nth($padding-margin,4);
+   };
       
    li {
       position: relative;
@@ -16,9 +20,21 @@
       list-style-type: none;
       width: 100%;
       margin-bottom:nth($padding-margin,3);
+      cursor: pointer;
+      transition-duration: 500ms;
+      @include tablette{
+
+      }
+      &:hover{
+         background-color:lighten($color-primaire, 35%);
+         transform: scale(1.02);
+         & i {
+            color:$color-primaire;
+         }
+      }
       i{
          margin-right:nth($padding-margin,2) ;
-         margin-left:nth($padding-margin,4);         
+         margin-left:nth($padding-margin,4);
       }
    }
    

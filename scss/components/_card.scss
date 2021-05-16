@@ -6,6 +6,9 @@
    border-radius: 20px;
    margin-bottom: nth($padding-margin,3);
    box-shadow:0px 3px 5px 2px rgb(220, 220, 220);
+   @include tablette{
+      flex:1;                    /**ou bien width:100%*/
+   }
 
    &__header{     
          img{
@@ -24,6 +27,14 @@
       padding-left: nth($padding-margin,2);    
          
    }
+}
+.container-restaurant{
+   @include tablette{
+      display: flex;
+      flex-direction: row;
+      gap: nth($padding-margin,3);
+   };
+   
 }
 
       /**Positionnement :text-coeur*/
@@ -81,13 +92,52 @@
 }
 
 .menus{
-  
-   &__titre{
-      margin-bottom: 6px;
+      
+   @include tablette{
+      display: flex;
+      flex-direction: row;
+      gap: nth($padding-margin,3);
+   };
+   &__blocs{
+
       margin-top:nth($padding-margin,5);
+
+      
       &:first-child{
          margin-top: 0;
       }
+   /**Animation*/
+   
+   animation: menu 2s ease-in-out backwards ;
+
+   @for $i from 1 through 3 {
+      &--#{$i} {
+          animation-delay:  $i*1 + s;
+      }           
+  }
+   @keyframes menu {
+      from {
+         opacity:0;
+     }
+     to {
+         opacity:1;
+     }
+ 
+      
+   
+
+
+
+      }
+      @include tablette{
+         flex:1;
+         margin-top: 0px;
+      };
+   }
+          
+   &__titre{
+      margin-bottom: 6px;
+     
    }
    &__separateur{
       border-bottom:3px solid $color-tertiaire;

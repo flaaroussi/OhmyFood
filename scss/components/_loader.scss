@@ -1,9 +1,12 @@
 .loading{
     /**Animation:appraition 1ere page*/
     background:#FFFFFF;
-    height: 100vh;
+    height: 100vh;            
     width: 100%;   
-    z-index: 100;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 1;
     animation-name:loading;
     animation-duration:1s; 
     animation-timing-function:ease-in-out; 
@@ -39,16 +42,43 @@
         align-items: center;
         justify-content: space-between;
     }
-     /**Anmation ohmyfood*/
-     .letter{
+     /**Animation ohmyfood*/
+    .letter{
         display: flex;
         width: 100%;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: 2rem;
+        font-family:$font-family-secondaire;
         color: $color-primaire;
         
+
+        &__loader{
+            animation: letters 1s linear infinite ;
+
+        @for $i from 1 through 8 {
+            &--#{$i} {
+                animation-delay:  $i / 10 + s;
+            }           
+        }
+
+        @keyframes letters {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
     }
+}
+
     .spinner{        
         height: 7em;
         width: 7em;
