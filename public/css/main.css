@@ -312,7 +312,7 @@ a {
   border-radius: 20px;
   margin-bottom: 1.5em;
   box-shadow: 0px 3px 5px 2px gainsboro;
-  transition: transform 400ms;
+  transition-duration: 500ms;
 }
 .bloc-card:hover {
   box-shadow: 1px 3px 10px 1px #412338;
@@ -448,6 +448,7 @@ a {
   border-radius: 20px;
   box-shadow: 1px 2px 10px 1px silver;
   display: flex;
+  align-items: center;
   flex-direction: row;
   height: 90px;
   width: 100%;
@@ -482,8 +483,8 @@ a {
   justify-content: end;
   text-align: center;
   font-weight: bold;
-  padding-bottom: 1.22em;
   width: 18%;
+  margin-top: 36px;
 }
 .menus__plat .menus__plat--check {
   display: none;
