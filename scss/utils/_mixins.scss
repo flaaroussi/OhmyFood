@@ -15,10 +15,10 @@
 }
 /** Responsive design: tablette et desktop */
 
-@mixin tablette($size : tablette) {
-   $taille : map-get($breakpoints, $size);
-   @media screen and (min-width: $taille){
+@mixin tablette($devise : tablette) {
+   // récupération de la taille de devise
+   $devise-width : map-get($breakpoints, $devise);
+   @media screen and (min-width: $devise-width){
       @content;
    }
-}
-   
+}  

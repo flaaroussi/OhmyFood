@@ -1,19 +1,14 @@
-
 .container{
    background-color:$color-bg-primaire;
    padding: nth($padding-margin,3);
 }
 
 /**Section :Geolocalisation*/
-
-.acceuil-geolocalisation{
-   
+.acceuil-geolocalisation{   
    background-color:lighten($color-icone, 90%);
    box-shadow: inset 0px 4px 4px -2px rgba(0,0,0,0.40);
-
    @include flex (row, center, 0);
-     &__preview{
-      
+     &__preview{      
       @include flex (row, 0, center);
       height: 45px;
       i{
@@ -23,8 +18,7 @@
          background-color:transparent;
          border:0px;
       }
-   }
-   
+   }   
 }
 
 /**Section :Fonctionnement*/
@@ -53,14 +47,9 @@
       padding-right: 15%;
       align-items: center
    };  
-
 }
-
-
 /**Section :Restaurants*/
-
 .container-bloc{
    margin-top: nth($padding-margin,4);
-   padding-bottom: nth($padding-margin,4);
-  
+   padding-bottom: nth($padding-margin,4);  
 }
