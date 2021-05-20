@@ -15,8 +15,9 @@
 }
 /** Responsive design: tablette et desktop */
 
-@mixin tablette {
-   @media screen and (min-width: map-get($breakpoints, tablette)){
+@mixin tablette($size : tablette) {
+   $taille : map-get($breakpoints, $size);
+   @media screen and (min-width: $taille){
       @content;
    }
 }

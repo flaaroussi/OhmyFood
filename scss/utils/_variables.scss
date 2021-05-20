@@ -26,7 +26,8 @@ $padding-margin: 0.5em 1em 1.5em 2em 2.5em 3em 4em 0.6em ;
 
 /** Breakpoints Responsive design: tablette et desktop*/
 $breakpoints:(
-   tablette:481px
+   tablette:650px,
+   desktop: 1000px
 );
 
 

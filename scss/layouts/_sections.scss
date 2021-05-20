@@ -45,20 +45,22 @@
    &__sous-titre{
       margin-bottom: nth($padding-margin,5);
    }
+   @include tablette(desktop){
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding-left :15%;
+      padding-right: 15%;
+      align-items: center
+   };  
 
 }
 
 
 /**Section :Restaurants*/
 
-
 .container-bloc{
    margin-top: nth($padding-margin,4);
    padding-bottom: nth($padding-margin,4);
   
 }
-/*********************************************************************/
-
-
-   
-
