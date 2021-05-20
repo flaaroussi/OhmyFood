@@ -29,7 +29,6 @@
       .coeur__rempli{
          display:block ;
          background: linear-gradient($color-primaire,$color-secondaire);
-         background-clip: text;
          background: -webkit-linear-gradient($color-primaire,$color-secondaire);        
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
