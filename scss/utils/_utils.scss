@@ -32,6 +32,7 @@
          background: -webkit-linear-gradient($color-primaire,$color-secondaire);        
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
+         transform: scale(1.14);
       }
       .coeur__cadre{
       display:none ;
