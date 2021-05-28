@@ -25,21 +25,49 @@
 /**Liens cliquables  coeur*/
 /**cacher le coeur rose*/
 .coeur {
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  position: relative;
+  background-color: black;
+  border-color: transparent;
 }
-.coeur__rempli {
-  display: none;
+.coeur:hover i.coeur__cadre {
+  opacity: 0;
 }
-.coeur:hover .coeur__rempli {
-  display: block;
-  background: linear-gradient(#9356dc, #FF79DA);
-  background: -webkit-linear-gradient(#9356dc, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(1.14);
+.coeur:hover::before {
+  opacity: 1;
 }
-.coeur:hover .coeur__cadre {
-  display: none;
+.coeur::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356dc 0%, #FF79DA 100%);
+}
+.coeur i {
+  transition-duration: 350ms;
+  background-color: #f2F2F2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+.coeur i.blanche {
+  background-color: #FFFFFF;
 }
 
 /** Chargement style global*/
@@ -292,7 +320,6 @@ a {
   left: -15px;
 }
 
-/**Liste page menu*/
 .badge {
   display: flex;
   justify-content: center;
@@ -312,11 +339,9 @@ a {
   border-radius: 20px;
   margin-bottom: 1.5em;
   box-shadow: 0px 3px 5px 2px gainsboro;
-  transition-duration: 400ms;
 }
 .bloc-card:hover {
   box-shadow: 1px 3px 10px 1px #412338;
-  transform: scale(1.01);
 }
 @media screen and (min-width: 650px) {
   .bloc-card {
@@ -403,30 +428,11 @@ a {
 }
 .menus__blocs {
   margin-top: 2.5em;
-  /** animation */
-  animation: menu 2s ease-in-out both;
   /** fin animation */
   /* tablet et desktop */
 }
 .menus__blocs:first-child {
   margin-top: 0;
-}
-@keyframes menu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.menus__blocs--1 {
-  animation-delay: 1s;
-}
-.menus__blocs--2 {
-  animation-delay: 2s;
-}
-.menus__blocs--3 {
-  animation-delay: 3s;
 }
 @media screen and (min-width: 650px) {
   .menus__blocs {
@@ -453,8 +459,78 @@ a {
   flex-direction: row;
   height: 90px;
   width: 100%;
+  /** animation */
+  animation: menu 2s ease-in-out both;
   /** class menus__plat__cout */
   /** class menus__plat__check */
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menus__plat--1 {
+  animation-delay: 0.5s;
+}
+.menus__plat--2 {
+  animation-delay: 1s;
+}
+.menus__plat--3 {
+  animation-delay: 1.5s;
+}
+.menus__plat--4 {
+  animation-delay: 2s;
+}
+.menus__plat--5 {
+  animation-delay: 2.5s;
+}
+.menus__plat--6 {
+  animation-delay: 3s;
+}
+.menus__plat--7 {
+  animation-delay: 3.5s;
+}
+.menus__plat--8 {
+  animation-delay: 4s;
+}
+.menus__plat--9 {
+  animation-delay: 4.5s;
+}
+.menus__plat--10 {
+  animation-delay: 5s;
+}
+.menus__plat--11 {
+  animation-delay: 5.5s;
+}
+.menus__plat--12 {
+  animation-delay: 6s;
+}
+.menus__plat--13 {
+  animation-delay: 6.5s;
+}
+.menus__plat--14 {
+  animation-delay: 7s;
+}
+.menus__plat--15 {
+  animation-delay: 7.5s;
+}
+.menus__plat--16 {
+  animation-delay: 8s;
+}
+.menus__plat--17 {
+  animation-delay: 8.5s;
+}
+.menus__plat--18 {
+  animation-delay: 9s;
+}
+.menus__plat--19 {
+  animation-delay: 9.5s;
+}
+.menus__plat--20 {
+  animation-delay: 10s;
 }
 .menus__plat:hover {
   cursor: pointer;

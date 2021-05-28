@@ -6,10 +6,8 @@
    border-radius: 20px;
    margin-bottom: nth($padding-margin,3);
    box-shadow:0px 3px 5px 2px rgb(220, 220, 220);
-   transition-duration: 400ms;
    &:hover{
-      box-shadow: 1px 3px 10px 1px rgb(65, 35, 56);
-      transform: scale(1.01);
+      box-shadow: 1px 3px 10px 1px rgb(65, 35, 56);     
    }
    @include tablette{
       flex:1;                    /**ou bien width:100%*/
@@ -101,22 +99,7 @@
       &:first-child{
          margin-top: 0;
       }
-      /** animation */
-      animation: menu 2s ease-in-out both ; 
-      @keyframes menu {
-         from {
-            opacity:0;
-        }
-        to {
-            opacity:1;
-        }
-      }
-      
-      @for $i from 1 through 3 {
-         &--#{$i} {
-             animation-delay:  $i*1 + s;
-         }           
-      }
+     
 
        /** fin animation */
 
@@ -148,7 +131,23 @@
       align-items: center;
       flex-direction: row;
       height: 90px;
-      width: 100%;  
+      width: 100%;
+       /** animation */
+       animation: menu 2s ease-in-out both ; 
+       @keyframes menu {
+          from {
+             opacity:0;
+         }
+         to {
+             opacity:1;
+         }
+       }
+       
+       @for $i from 1 through 20 {
+          &--#{$i} {
+              animation-delay:  $i*0.5 + s;
+          }           
+       }
       
       
       &:hover{
