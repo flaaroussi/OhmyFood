@@ -93,6 +93,7 @@ img {
   height: 100%;
 }
 
+/** Page d'acceuil **/
 h1 {
   font-size: 1.5rem;
   margin-bottom: 1em;
@@ -413,10 +414,10 @@ a {
   font-family: "Shrikhand";
 }
 
+/*Menus*/
 .menus {
   /** class menus__blocs */
   /** class menus__titre */
-  /** class menus__separateur */
   /** class menus__plat */
 }
 @media screen and (min-width: 650px) {
@@ -441,12 +442,9 @@ a {
   }
 }
 .menus__titre {
+  font-weight: normal;
+  font-size: 16px;
   margin-bottom: 6px;
-}
-.menus__separateur {
-  border-bottom: 3px solid #99E2D0;
-  margin-bottom: 1em;
-  width: 45px;
 }
 .menus__plat {
   position: relative;
@@ -562,7 +560,7 @@ a {
   padding: 1em;
   width: 82%;
 }
-.menus__plat--item h2,
+.menus__plat--item h3,
 .menus__plat--item p {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -594,6 +592,20 @@ a {
 .menus__plat .menus__plat--check .fa-check-circle {
   font-size: 2rem;
   color: white !important;
+}
+
+/**  menus__separateur */
+hr {
+  background-color: #99E2D0;
+  margin-bottom: 1em;
+  width: 45px;
+  height: 3px;
+  border: none;
+}
+
+.menus-soustitre {
+  font-size: 18px;
+  margin-bottom: 0.5em;
 }
 
 /** Chargement style layouts*/

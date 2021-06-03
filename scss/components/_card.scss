@@ -41,8 +41,6 @@
 
       /**Positionnement :text-coeur*/
 
-
-
 .main-menu{
    background-color: $color-bg-primaire;
 }
@@ -84,7 +82,7 @@
    font-family: 'Shrikhand';
 }
 
-
+/*Menus*/
 .menus{
       
    @include tablette{
@@ -99,8 +97,7 @@
       &:first-child{
          margin-top: 0;
       }
-     
-
+   
        /** fin animation */
 
        /* tablet et desktop */
@@ -111,15 +108,13 @@
    }
      
     /** class menus__titre */
-   &__titre{
+   &__titre {
+      font-weight: normal;
+      font-size: 16px;
       margin-bottom: 6px;     
    }
-    /** class menus__separateur */
-   &__separateur{
-      border-bottom:3px solid $color-tertiaire;
-      margin-bottom: nth($padding-margin,2);
-      width: 45px;
-   }
+   
+  
    /** class menus__plat */
    &__plat{
       position: relative;
@@ -181,14 +176,15 @@
       &--item{
          padding:nth($padding-margin,2);
          width: 82%;
-         h2,
+         h3,
          p{
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
          }         
       }
-
+      
+      
       /** class menus__plat__cout */
       &--cout{
          display: flex;
@@ -221,8 +217,21 @@
       }
    }
 }
-
+ /**  menus__separateur */
+hr {
   
+      background-color: $color-tertiaire;
+      margin-bottom: nth($padding-margin,2);
+      width: 45px;
+      height: 3px;
+      border: none;
+   
+}
+
+.menus-soustitre{
+  font-size: 18px;
+  margin-bottom: nth($padding-margin,1);
+}
 
   
 
