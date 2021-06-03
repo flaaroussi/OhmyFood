@@ -24,7 +24,8 @@
 
 /**Liens cliquables  coeur*/
 /**cacher le coeur rose*/
-.coeur {
+.coeur,
+.coeur-menus {
   height: 2rem;
   width: 2rem;
   padding: 0;
@@ -32,17 +33,22 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   background-color: black;
   border-color: transparent;
 }
-.coeur:hover i.coeur__cadre {
+.coeur:hover i.coeur__cadre,
+.coeur-menus:hover i.coeur__cadre {
   opacity: 0;
 }
-.coeur:hover::before {
+.coeur:hover::before,
+.coeur-menus:hover::before {
   opacity: 1;
 }
-.coeur::before {
+.coeur::before,
+.coeur-menus::before {
   opacity: 0;
   transition: 0.5s;
   content: "";
@@ -53,7 +59,8 @@
   width: 100%;
   background: linear-gradient(0deg, #9356dc 0%, #FF79DA 100%);
 }
-.coeur i {
+.coeur i,
+.coeur-menus i {
   transition-duration: 350ms;
   background-color: #f2F2F2;
   position: absolute;
@@ -66,8 +73,15 @@
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.coeur i.blanche {
+.coeur i.blanche,
+.coeur-menus i.blanche {
   background-color: #FFFFFF;
+}
+
+/**ceur des 4 pages menus*/
+.coeur-menus {
+  top: 20px;
+  right: 40px;
 }
 
 /** Chargement style global*/

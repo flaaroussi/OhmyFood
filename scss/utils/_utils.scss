@@ -20,7 +20,8 @@
 /**cacher le coeur rose*/
 
 
-.coeur{
+.coeur,
+.coeur-menus{
    height: 2rem;
    width: 2rem;
    padding: 0;
@@ -28,7 +29,9 @@
    align-items:center;
    justify-content:center;
    cursor: pointer;
-   position: relative;
+   position: absolute;
+   bottom: 20px;
+   right: 20px;   
    background-color: black;
    border-color: transparent;
    &:hover{
@@ -68,4 +71,12 @@
   i.blanche{
    background-color: #FFFFFF;
   }
+}
+
+/**ceur des 4 pages menus*/
+
+.coeur-menus{  
+   top: 20px ;
+   right: 40px; 
+
 }
