@@ -1,6 +1,6 @@
 __Formation <a href="https://openclassrooms.com/fr/paths/314-developpeur-front-end">openclassrooms | Parcours Développeur Front-End</a>__
 <p>Projet N° 3 pour la réalisation d'un site web pour le restaurant OhmyFood</p>
-<p>Lien du site : https://flaaroussi.github.io/OhmyFood/</p> 
+<p>Lien du site : https://flaaroussi.github.io/OhmyFood</p> 
 
 ## Technologies:
    * HTML5
